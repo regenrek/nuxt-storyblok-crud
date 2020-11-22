@@ -1,20 +1,22 @@
-# nuxt-nujek-starter
+# nuxt-storyblok-query-example
 
-## Build Setup
+This is the simplest example of creating and reading `posts` from storyblok cms
+which I could come up with. 
 
-```bash
-# install dependencies
-$ yarn install
+## Quickstart
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+Copy `.env.example` to `.env` in your workspace and fill in your Storyblok API credentials.
 
-# build for production and launch server
-$ yarn build
-$ yarn start
+Get your [Client API access Token](https://www.storyblok.com/docs/guide/getting-started#nuxtjs-example) (Read stories)
+Get your [Management API OAuth Token](http://app.storyblok.com/#!/me/account) (Create stories)
 
-# generate static project
-$ yarn generate
+
+#### Install
 ```
+yarn
+````
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+#### Run
+````
+yarn dev
+````

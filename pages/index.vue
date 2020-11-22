@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto max-w-4xl my-5">
+  <div class="mx-auto max-w-2xl my-5">
     <div>
       <h1 class="text-4xl">
         {{ home.name }}
@@ -12,14 +12,24 @@
           </li>
         </ul>
 
-        <div v-if="$fetchState.pending" class="my-2">Posts are loading...</div>
+        <div class="mt-5" style="height: 20px">
+          <span v-show="$fetchState.pending" class="italic"
+            >Posts are loading...</span
+          >
+        </div>
       </div>
 
-      <div class="flex space-x-6">
-        <button class="border b-gray-200 p-4" @click="createNewPost">
+      <div class="flex space-x-4">
+        <button
+          class="focus:outline-none bg-green-500 active:bg-green-700 font-semibold rounded-md text-white py-2 px-3 shadow-md"
+          @click="createNewPost"
+        >
           Create new post
         </button>
-        <button class="border b-gray-200 p-4" @click="refetchPosts">
+        <button
+          class="focus:outline-none bg-blue-500 active:bg-blue-700 font-semibold rounded-md text-white py-2 px-3 shadow-md"
+          @click="refetchPosts"
+        >
           Refetch Posts
         </button>
       </div>
@@ -29,7 +39,7 @@
 
 <script>
 import slugify from 'slugify'
-const PARENT_STORY_ID = 28237991
+const PARENT_STORY_ID = '<insert your parent id here>'
 
 export default {
   async asyncData({ $storyblok }) {
