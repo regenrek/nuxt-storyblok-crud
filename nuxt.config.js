@@ -33,10 +33,7 @@ export default {
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: [
-    ['storyblok-nuxt', storyblokConfig],
-    ['@wearewondrous/nuxt-storyblok-queries', storyblokConfig]
-  ],
+  modules: [['@wearewondrous/nuxt-storyblok-queries', storyblokConfig]],
 
   tailwindcss: {
     cssPath: '~/assets/styles/tailwind.css'

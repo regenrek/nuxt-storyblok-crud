@@ -43,7 +43,6 @@
     "lint-staged": "^10.4.0",
     "prettier": "^2.1.2",
     "slugify": "^1.4.6",
-    "storyblok-nuxt": "^1.3.0",
     "tailwindcss": "^2.0.1-compat"
   }
 }
