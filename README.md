@@ -4,7 +4,7 @@ This is the simplest example of creating and reading `posts` from storyblok cms
 which I could come up with. 
 
 ## Preview
-![demo](sbimage.gif)
+![demo](example/sbimage.gif)
 
 ## Quickstart
 
