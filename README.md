@@ -19,6 +19,12 @@ Get your [Management API OAuth Token](http://app.storyblok.com/#!/me/account) (C
 yarn
 ````
 
+#### Run
+````
+yarn dev
+````
+
+
 ## Caveats
 
 If you want to create posts in a folder named `posts` then you have
@@ -29,8 +35,3 @@ found a way to add a pretty name for the parent story/folder yet.
 ```
 const PARENT_STORY_ID = '<insert your parent id here>'
 ```
-
-#### Run
-````
-yarn dev
-````
